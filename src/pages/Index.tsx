@@ -125,7 +125,11 @@ const Index = () => {
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
-                <Card key={index} className="hover-lift cursor-pointer shadow-card">
+                <Card 
+                  key={index} 
+                  className="hover-lift cursor-pointer shadow-card"
+                  onClick={() => window.location.href = '/services'}
+                >
                   <div className="aspect-video overflow-hidden rounded-t-lg">
                     <img 
                       src={service.image} 
