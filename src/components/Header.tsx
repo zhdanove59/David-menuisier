@@ -1,0 +1,105 @@
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Menu, X, Phone, MessageCircle } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
+
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const navItems = [
+    { name: "Accueil", path: "/" },
+    { name: "Services", path: "/services" },
+    { name: "Réalisations", path: "/realisations" },
+    { name: "À propos", path: "/a-propos" },
+    { name: "Contact", path: "/contact" },
+  ];
+
+  const isActive = (path: string) => location.pathname === path;
+
+  return (
+    <header className="bg-background border-b border-border sticky top-0 z-50 shadow-card">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo */}
+          <Link to="/" className="flex items-center space-x-2 hover-lift">
+            <div className="w-10 h-10 bg-gradient-wood rounded-lg flex items-center justify-center">
+              <span className="text-primary-foreground font-bold text-lg">D</span>
+            </div>
+            <div>
+              <span className="text-lg font-bold text-primary">David Menuisier</span>
+              <p className="text-xs text-muted-foreground">Le Mans - Sarthe</p>
+            </div>
+          </Link>
+
+          {/* Navigation Desktop */}
+          <nav className="hidden md:flex space-x-8">
+            {navItems.map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                className={`text-sm font-medium transition-colors hover:text-primary ${
+                  isActive(item.path) ? "text-primary" : "text-muted-foreground"
+                }`}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </nav>
+
+          {/* Boutons d'action */}
+          <div className="hidden md:flex items-center space-x-2">
+            <Button variant="emergency" size="sm" className="text-xs">
+              <Phone className="w-4 h-4" />
+              Urgence
+            </Button>
+            <Button variant="whatsapp" size="sm">
+              <MessageCircle className="w-4 h-4" />
+              Devis
+            </Button>
+          </div>
+
+          {/* Menu mobile */}
+          <button
+            className="md:hidden"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
+
+        {/* Menu mobile déployé */}
+        {isMenuOpen && (
+          <div className="md:hidden bg-card border-t border-border kayak-enter">
+            <nav className="py-4 space-y-2">
+              {navItems.map((item) => (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`block px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground rounded-md ${
+                    isActive(item.path) ? "text-primary bg-secondary" : "text-muted-foreground"
+                  }`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+              <div className="flex space-x-2 px-4 pt-4">
+                <Button variant="emergency" size="sm" className="text-xs flex-1">
+                  <Phone className="w-4 h-4" />
+                  Urgence
+                </Button>
+                <Button variant="whatsapp" size="sm" className="flex-1">
+                  <MessageCircle className="w-4 h-4" />
+                  Devis
+                </Button>
+              </div>
+            </nav>
+          </div>
+        )}
+      </div>
+    </header>
+  );
+};
+
+export default Header;
