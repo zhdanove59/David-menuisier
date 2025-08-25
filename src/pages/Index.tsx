@@ -18,6 +18,8 @@ import heroImage from "@/assets/hero-menuisier.jpg";
 import cuisineImage from "@/assets/cuisine-montage.jpg";
 import fenetreImage from "@/assets/fenetre-reparation.jpg";
 import urgenceImage from "@/assets/urgence-porte.jpg";
+import cathedraleLeMansImage from "@/assets/cathedrale-le-mans.jpg";
+import campagneSartheImage from "@/assets/campagne-sarthe.jpg";
 
 const Index = () => {
   const services = [
@@ -208,15 +210,40 @@ const Index = () => {
       {/* Zone d'intervention */}
       <section className="py-20 section-gradient">
         <div className="container mx-auto px-4">
-          <div className="text-center max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-              Zone d'intervention
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              Nous intervenons au <strong>Mans et dans toute la Sarthe (72)</strong> : 
-              Allonnes, Coulaines, Arnage, La Chapelle-Saint-Aubin, Changé, 
-              Yvré-l'Évêque, Sargé-lès-le-Mans et toutes les communes voisines.
-            </p>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+                Zone d'intervention
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8">
+                Nous intervenons au <strong>Mans et dans toute la Sarthe (72)</strong> : 
+                Allonnes, Coulaines, Arnage, La Chapelle-Saint-Aubin, Changé, 
+                Yvré-l'Évêque, Sargé-lès-le-Mans et toutes les communes voisines.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
+              <div>
+                <img 
+                  src={cathedraleLeMansImage} 
+                  alt="Cathédrale Saint-Julien du Mans - Zone d'intervention menuisier"
+                  className="rounded-lg shadow-hero w-full"
+                />
+                <p className="text-center text-sm text-muted-foreground mt-2">
+                  Le Mans - Cathédrale Saint-Julien
+                </p>
+              </div>
+              <div>
+                <img 
+                  src={campagneSartheImage} 
+                  alt="Campagne sarthoise - Intervention menuiserie Sarthe 72"
+                  className="rounded-lg shadow-hero w-full"
+                />
+                <p className="text-center text-sm text-muted-foreground mt-2">
+                  Campagne sarthoise - Toute la Sarthe (72)
+                </p>
+              </div>
+            </div>
             
             <div className="bg-card p-8 rounded-lg shadow-card">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">

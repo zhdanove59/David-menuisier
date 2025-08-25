@@ -15,6 +15,8 @@ import {
   CheckCircle
 } from "lucide-react";
 import heroImage from "@/assets/hero-menuisier.jpg";
+import vueLeMansImage from "@/assets/vue-le-mans.jpg";
+import circuitLeMansImage from "@/assets/circuit-le-mans.jpg";
 
 const APropos = () => {
   const valeurs = [
@@ -371,14 +373,39 @@ const APropos = () => {
       {/* Zone d'intervention */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-              Au service du Mans et de la Sarthe
-            </h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              Basé au Mans, nous intervenons dans toute la Sarthe (72) avec 
-              la même qualité de service et le même professionnalisme.
-            </p>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+                Au service du Mans et de la Sarthe
+              </h2>
+              <p className="text-xl text-muted-foreground mb-8">
+                Basé au Mans, nous intervenons dans toute la Sarthe (72) avec 
+                la même qualité de service et le même professionnalisme.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
+              <div>
+                <img 
+                  src={vueLeMansImage} 
+                  alt="Vue panoramique du Mans - Artisan menuisier local"
+                  className="rounded-lg shadow-hero w-full"
+                />
+                <p className="text-center text-sm text-muted-foreground mt-2">
+                  Le Mans - Notre ville d'origine
+                </p>
+              </div>
+              <div>
+                <img 
+                  src={circuitLeMansImage} 
+                  alt="Circuit des 24 heures du Mans - Fierté régionale"
+                  className="rounded-lg shadow-hero w-full"
+                />
+                <p className="text-center text-sm text-muted-foreground mt-2">
+                  Circuit des 24 heures - Fierté du Mans
+                </p>
+              </div>
+            </div>
             
             <div className="bg-card p-8 rounded-lg shadow-card">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
