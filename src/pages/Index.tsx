@@ -76,7 +76,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto text-center kayak-enter">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Menuisier au Mans
-              <span className="block text-primary-glow">24 ans d'expérience</span>
+              <span className="block text-white drop-shadow-lg font-extrabold">24 ans d'expérience</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90">
               Réparation, aménagement et montage de meubles sur mesure
