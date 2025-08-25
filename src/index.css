@@ -8,55 +8,55 @@ Couleurs inspirées du bois, navigation fluide comme un kayak
 
 @layer base {
   :root {
-    /* Couleurs de base - tons naturels et professionnels */
-    --background: 35 25% 98%;
-    --foreground: 25 15% 15%;
+    /* Thème Français Élégant - Bleu Blanc Rouge */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
 
-    --card: 35 25% 99%;
-    --card-foreground: 25 15% 15%;
+    --card: 210 15% 96%;
+    --card-foreground: 215 25% 15%;
 
-    --popover: 35 25% 99%;
-    --popover-foreground: 25 15% 15%;
+    --popover: 210 15% 99%;
+    --popover-foreground: 215 25% 15%;
 
-    /* Couleurs principales - bois chaud et professionnel */
-    --primary: 25 45% 35%;
-    --primary-foreground: 35 25% 98%;
-    --primary-glow: 25 55% 45%;
+    /* Couleurs principales - Bleu marine profond français */
+    --primary: 215 85% 25%;
+    --primary-foreground: 210 15% 98%;
+    --primary-glow: 215 75% 35%;
 
-    /* Couleurs secondaires - vert doux nature */
-    --secondary: 140 25% 85%;
-    --secondary-foreground: 25 45% 35%;
+    /* Couleurs secondaires - Blanc cassé français */
+    --secondary: 45 25% 94%;
+    --secondary-foreground: 215 25% 15%;
 
-    /* Couleurs d'accent - bois clair */
-    --accent: 35 35% 90%;
-    --accent-foreground: 25 45% 35%;
+    /* Couleurs d'accent - Rouge bordeaux */
+    --accent: 350 65% 45%;
+    --accent-foreground: 210 15% 98%;
 
     /* Couleurs neutres */
-    --muted: 35 15% 92%;
-    --muted-foreground: 25 10% 50%;
+    --muted: 210 15% 92%;
+    --muted-foreground: 215 15% 45%;
 
-    /* Couleurs d'urgence */
-    --emergency: 15 85% 55%;
-    --emergency-foreground: 35 25% 98%;
+    /* Couleurs d'urgence - Rouge français */
+    --emergency: 350 75% 50%;
+    --emergency-foreground: 0 0% 100%;
 
     /* Couleurs système */
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 35 25% 98%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 35 15% 88%;
-    --input: 35 15% 95%;
-    --ring: 25 45% 35%;
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 215 85% 25%;
 
-    /* Gradients pour effets visuels */
-    --gradient-wood: linear-gradient(135deg, hsl(25 45% 35%), hsl(30 50% 40%));
-    --gradient-hero: linear-gradient(135deg, hsl(25 45% 35%), hsl(140 25% 25%));
-    --gradient-section: linear-gradient(180deg, hsl(35 25% 98%), hsl(35 15% 96%));
-    --gradient-kayak: linear-gradient(90deg, hsl(140 25% 85%), hsl(180 30% 80%));
+    /* Gradients français élégants */
+    --gradient-wood: linear-gradient(135deg, hsl(215 85% 25%), hsl(210 60% 40%));
+    --gradient-hero: linear-gradient(135deg, hsl(215 85% 25%), hsl(350 65% 45%));
+    --gradient-section: linear-gradient(180deg, hsl(210 20% 98%), hsl(210 15% 96%));
+    --gradient-kayak: linear-gradient(90deg, hsl(215 75% 35%), hsl(350 55% 55%));
 
-    /* Ombres */
-    --shadow-wood: 0 4px 20px hsl(25 45% 35% / 0.15);
-    --shadow-card: 0 2px 10px hsl(25 15% 15% / 0.1);
-    --shadow-hero: 0 10px 40px hsl(25 45% 35% / 0.2);
+    /* Ombres françaises */
+    --shadow-wood: 0 10px 30px hsl(215 85% 25% / 0.3);
+    --shadow-card: 0 2px 10px hsl(215 25% 15% / 0.1);
+    --shadow-hero: 0 20px 40px hsl(215 85% 25% / 0.4);
 
     /* Animations fluides */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
