@@ -289,7 +289,7 @@ const Index = () => {
               <MessageCircle className="w-6 h-6" />
               Devis WhatsApp gratuit
             </Button>
-            <Button variant="outline" size="lg" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+            <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
               <Phone className="w-6 h-6" />
               +33 6 80 40 14 00
             </Button>
