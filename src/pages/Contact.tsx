@@ -51,8 +51,8 @@ const Contact = () => {
                     <Phone className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-primary">Téléphone fixe</h3>
-                    <p className="text-muted-foreground">02 43 XX XX XX</p>
+                    <h3 className="font-semibold text-primary">Téléphone</h3>
+                    <p className="text-muted-foreground">+33 6 80 40 14 00</p>
                     <p className="text-sm text-muted-foreground">Lun-Ven 8h-18h</p>
                   </div>
                 </div>
@@ -63,7 +63,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-primary">WhatsApp</h3>
-                    <p className="text-muted-foreground">06 XX XX XX XX</p>
+                    <p className="text-muted-foreground">+33 6 80 40 14 00</p>
                     <p className="text-sm text-muted-foreground">7j/7 - Réponse rapide</p>
                   </div>
                 </div>
@@ -85,7 +85,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-primary">Adresse</h3>
-                    <p className="text-muted-foreground">Le Mans, Sarthe (72)</p>
+                    <p className="text-muted-foreground">6 Rue Bazoge, 72100 Le Mans</p>
                     <p className="text-sm text-muted-foreground">Déplacement à domicile</p>
                   </div>
                 </div>
@@ -138,7 +138,7 @@ const Contact = () => {
 
                   <div>
                     <Label htmlFor="telephone">Téléphone *</Label>
-                    <Input id="telephone" type="tel" placeholder="06 XX XX XX XX" />
+                    <Input id="telephone" type="tel" placeholder="+33 6 80 40 14 00" />
                   </div>
 
                   <div>

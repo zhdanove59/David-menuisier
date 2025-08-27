@@ -181,10 +181,10 @@ const Index = () => {
                 </ul>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button variant="emergency" size="lg" className="hover-lift">
-                    <Phone className="w-5 h-5" />
-                    02 43 XX XX XX
-                  </Button>
+              <Button variant="emergency" size="lg" className="hover-lift">
+                <Phone className="w-5 h-5" />
+                +33 6 80 40 14 00
+              </Button>
                   <Button variant="whatsapp" size="lg" className="hover-lift">
                     <MessageCircle className="w-5 h-5" />
                     WhatsApp urgent
@@ -291,7 +291,7 @@ const Index = () => {
             </Button>
             <Button variant="outline" size="lg" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
               <Phone className="w-6 h-6" />
-              02 43 XX XX XX
+              +33 6 80 40 14 00
             </Button>
           </div>
         </div>

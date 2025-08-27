@@ -361,7 +361,7 @@ const Realisations = () => {
             </Button>
             <Button variant="outline" size="lg" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
               <Phone className="w-6 h-6" />
-              02 43 XX XX XX
+              +33 6 80 40 14 00
             </Button>
           </div>
         </div>

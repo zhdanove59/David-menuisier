@@ -22,9 +22,10 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 hover-lift">
-            <div className="w-10 h-10 bg-gradient-wood rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">D</span>
+          <Link to="/" className="flex items-center space-x-3 hover-lift">
+            <div className="flex flex-col items-center justify-center bg-gradient-wood rounded-lg p-3 min-w-[60px]">
+              <span className="text-primary-foreground font-bold text-lg leading-none">DAVID</span>
+              <span className="text-primary-foreground/80 text-xs leading-none italic">L'art du bois</span>
             </div>
             <div>
               <span className="text-lg font-bold text-primary">David Menuisier</span>

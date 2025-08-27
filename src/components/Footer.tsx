@@ -12,11 +12,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary-glow" />
-                <span>02 43 XX XX XX</span>
+                <span>+33 6 80 40 14 00</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MessageCircle className="w-5 h-5 text-primary-glow" />
-                <span>06 XX XX XX XX</span>
+                <span>+33 6 80 40 14 00</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary-glow" />
@@ -24,7 +24,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-primary-glow" />
-                <span>Le Mans, Sarthe (72)</span>
+                <span>6 Rue Bazoge, 72100 Le Mans</span>
               </div>
             </div>
           </div>
@@ -63,7 +63,7 @@ const Footer = () => {
             <div className="flex space-x-4">
               <Button variant="emergency" size="lg">
                 <Phone className="w-5 h-5" />
-                Urgence - Appelez maintenant
+                +33 6 80 40 14 00
               </Button>
               <Button variant="whatsapp" size="lg">
                 <MessageCircle className="w-5 h-5" />
