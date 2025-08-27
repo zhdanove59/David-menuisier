@@ -83,9 +83,11 @@ const Index = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button variant="hero" size="lg" className="hover-lift">
-                <MessageCircle className="w-6 h-6" />
-                Devis gratuit WhatsApp
+              <Button variant="hero" size="lg" className="hover-lift" asChild>
+                <a href="https://wa.me/33680401400?text=Bonjour, je souhaiterais un devis gratuit pour mes travaux de menuiserie." target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-6 h-6" />
+                  Devis gratuit WhatsApp
+                </a>
               </Button>
               <Button variant="emergency" size="lg" className="hover-lift">
                 <Phone className="w-6 h-6" />
@@ -185,10 +187,12 @@ const Index = () => {
                 <Phone className="w-5 h-5" />
                 +33 6 80 40 14 00
               </Button>
-                  <Button variant="whatsapp" size="lg" className="hover-lift">
-                    <MessageCircle className="w-5 h-5" />
-                    WhatsApp urgent
-                  </Button>
+              <Button variant="whatsapp" size="lg" className="hover-lift" asChild>
+                <a href="https://wa.me/33680401400?text=URGENCE - J'ai besoin d'une intervention rapide" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-5 h-5" />
+                  WhatsApp urgent
+                </a>
+              </Button>
                 </div>
               </div>
 
@@ -285,9 +289,11 @@ const Index = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
-              <MessageCircle className="w-6 h-6" />
-              Devis WhatsApp gratuit
+            <Button variant="hero" size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90" asChild>
+              <a href="https://wa.me/33680401400?text=Bonjour, je souhaiterais un devis gratuit pour mes travaux de menuiserie." target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-6 h-6" />
+                Devis WhatsApp gratuit
+              </a>
             </Button>
             <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
               <Phone className="w-6 h-6" />

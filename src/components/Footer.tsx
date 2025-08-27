@@ -65,9 +65,11 @@ const Footer = () => {
                 <Phone className="w-5 h-5" />
                 +33 6 80 40 14 00
               </Button>
-              <Button variant="whatsapp" size="lg">
-                <MessageCircle className="w-5 h-5" />
-                Devis gratuit WhatsApp
+              <Button variant="whatsapp" size="lg" asChild>
+                <a href="https://wa.me/33680401400?text=Bonjour, je souhaiterais un devis gratuit pour mes travaux de menuiserie." target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-5 h-5" />
+                  Devis gratuit WhatsApp
+                </a>
               </Button>
             </div>
             <div className="text-center">

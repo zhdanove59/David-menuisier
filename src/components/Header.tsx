@@ -56,9 +56,11 @@ const Header = () => {
               <Phone className="w-4 h-4" />
               Urgence
             </Button>
-            <Button variant="whatsapp" size="sm">
-              <MessageCircle className="w-4 h-4" />
-              Devis
+            <Button variant="whatsapp" size="sm" asChild>
+              <a href="https://wa.me/33680401400?text=Bonjour, je souhaiterais un devis pour mes travaux." target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-4 h-4" />
+                Devis
+              </a>
             </Button>
           </div>
 
@@ -92,9 +94,11 @@ const Header = () => {
                   <Phone className="w-4 h-4" />
                   Urgence
                 </Button>
-                <Button variant="whatsapp" size="sm" className="flex-1">
-                  <MessageCircle className="w-4 h-4" />
-                  Devis
+                <Button variant="whatsapp" size="sm" className="flex-1" asChild>
+                  <a href="https://wa.me/33680401400?text=Bonjour, je souhaiterais un devis pour mes travaux." target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="w-4 h-4" />
+                    Devis
+                  </a>
                 </Button>
               </div>
             </nav>
