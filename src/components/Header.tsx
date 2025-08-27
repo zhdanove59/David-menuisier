@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, MessageCircle } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import logoImage from "@/assets/logo-david.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,10 +24,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 hover-lift">
-            <div className="flex flex-col items-center justify-center bg-gradient-wood rounded-lg p-3 min-w-[60px]">
-              <span className="text-primary-foreground font-bold text-lg leading-none">DAVID</span>
-              <span className="text-primary-foreground/80 text-xs leading-none italic">L'art du bois</span>
-            </div>
+            <img 
+              src={logoImage} 
+              alt="David Menuisier - L'art du bois sur mesure" 
+              className="h-12 w-auto"
+            />
             <div>
               <span className="text-lg font-bold text-primary">David Menuisier</span>
               <p className="text-xs text-muted-foreground">Le Mans - Sarthe</p>
