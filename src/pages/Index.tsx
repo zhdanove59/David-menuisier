@@ -15,6 +15,7 @@ import {
   Car
 } from "lucide-react";
 import heroImage from "@/assets/hero-menuisier.jpg";
+import logoImage from "@/assets/logo-david.png";
 import cuisineImage from "@/assets/cuisine-montage.jpg";
 import fenetreImage from "@/assets/fenetre-reparation.jpg";
 import urgenceImage from "@/assets/urgence-porte.jpg";
@@ -120,9 +121,17 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
               Nos prestations de menuiserie
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
               Du montage de cuisine à la réparation d'urgence, nous intervenons pour tous vos besoins en menuiserie
             </p>
+            {/* Logo signature */}
+            <div className="flex justify-center mb-8">
+              <img 
+                src={logoImage} 
+                alt="David Menuisier - Signature artisan" 
+                className="h-20 md:h-24 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
+              />
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
