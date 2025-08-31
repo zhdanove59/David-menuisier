@@ -118,20 +118,20 @@ const Index = () => {
       <section className="py-20 section-gradient">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
+            {/* Logo signature en premier */}
+            <div className="flex justify-center mb-8">
+              <img 
+                src={logoImage} 
+                alt="David Menuisier - Signature artisan" 
+                className="h-24 md:h-28 w-auto opacity-90 hover:opacity-100 transition-opacity duration-300"
+              />
+            </div>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
               Nos prestations de menuiserie
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
               Du montage de cuisine à la réparation d'urgence, nous intervenons pour tous vos besoins en menuiserie
             </p>
-            {/* Logo signature */}
-            <div className="flex justify-center mb-8">
-              <img 
-                src={logoImage} 
-                alt="David Menuisier - Signature artisan" 
-                className="h-20 md:h-24 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
-              />
-            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
