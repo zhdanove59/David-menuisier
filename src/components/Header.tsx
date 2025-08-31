@@ -51,8 +51,8 @@ const Header = () => {
           </nav>
 
           {/* Navigation Tablette - Version compacte */}
-          <nav className="hidden md:flex lg:hidden space-x-4">
-            {navItems.slice(0, 3).map((item) => (
+          <nav className="hidden md:flex lg:hidden space-x-3">
+            {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
