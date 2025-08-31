@@ -90,9 +90,11 @@ const Index = () => {
                   Devis gratuit WhatsApp
                 </a>
               </Button>
-              <Button variant="emergency" size="lg" className="hover-lift">
-                <Phone className="w-6 h-6" />
-                Urgence - Appelez maintenant
+              <Button variant="emergency" size="lg" className="hover-lift" asChild>
+                <a href="tel:+33680401400">
+                  <Phone className="w-6 h-6" />
+                  Urgence - Appelez maintenant
+                </a>
               </Button>
             </div>
 
@@ -192,9 +194,11 @@ const Index = () => {
                 </ul>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="emergency" size="lg" className="hover-lift">
-                <Phone className="w-5 h-5" />
-                +33 6 80 40 14 00
+              <Button variant="emergency" size="lg" className="hover-lift" asChild>
+                <a href="tel:+33680401400">
+                  <Phone className="w-5 h-5" />
+                  +33 6 80 40 14 00
+                </a>
               </Button>
               <Button variant="whatsapp" size="lg" className="hover-lift" asChild>
                 <a href="https://wa.me/33680401400?text=URGENCE - J'ai besoin d'une intervention rapide" target="_blank" rel="noopener noreferrer">

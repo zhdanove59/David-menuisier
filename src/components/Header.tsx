@@ -67,9 +67,11 @@ const Header = () => {
 
           {/* Boutons d'action Desktop */}
           <div className="hidden lg:flex items-center space-x-2 flex-shrink-0">
-            <Button variant="emergency" size="sm" className="text-xs">
-              <Phone className="w-4 h-4" />
-              Urgence
+            <Button variant="emergency" size="sm" className="text-xs" asChild>
+              <a href="tel:+33680401400">
+                <Phone className="w-4 h-4" />
+                Urgence
+              </a>
             </Button>
             <Button variant="whatsapp" size="sm" asChild>
               <a href="https://wa.me/33680401400?text=Bonjour, je souhaiterais un devis pour mes travaux." target="_blank" rel="noopener noreferrer">
@@ -81,8 +83,10 @@ const Header = () => {
 
           {/* Boutons d'action Tablette - Version compacte */}
           <div className="hidden md:flex lg:hidden items-center space-x-1 flex-shrink-0">
-            <Button variant="emergency" size="sm" className="text-xs px-2">
-              <Phone className="w-4 h-4" />
+            <Button variant="emergency" size="sm" className="text-xs px-2" asChild>
+              <a href="tel:+33680401400">
+                <Phone className="w-4 h-4" />
+              </a>
             </Button>
             <Button variant="whatsapp" size="sm" className="px-2" asChild>
               <a href="https://wa.me/33680401400?text=Bonjour, je souhaiterais un devis pour mes travaux." target="_blank" rel="noopener noreferrer">
@@ -117,9 +121,11 @@ const Header = () => {
                 </Link>
               ))}
               <div className="flex space-x-2 px-4 pt-4">
-                <Button variant="emergency" size="sm" className="text-xs flex-1">
-                  <Phone className="w-4 h-4" />
-                  Urgence
+                <Button variant="emergency" size="sm" className="text-xs flex-1" asChild>
+                  <a href="tel:+33680401400">
+                    <Phone className="w-4 h-4" />
+                    Urgence
+                  </a>
                 </Button>
                 <Button variant="whatsapp" size="sm" className="flex-1" asChild>
                   <a href="https://wa.me/33680401400?text=Bonjour, je souhaiterais un devis pour mes travaux." target="_blank" rel="noopener noreferrer">
