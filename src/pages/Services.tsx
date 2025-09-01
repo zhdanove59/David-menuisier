@@ -14,6 +14,7 @@ import {
   CheckCircle,
   Shield
 } from "lucide-react";
+import amenagementImage from "@/assets/amenagement-interieur.jpg"
 import cuisineImage from "@/assets/cuisine-montage.jpg";
 import fenetreImage from "@/assets/fenetre-reparation.jpg";
 import urgenceImage from "@/assets/urgence-porte.jpg";
@@ -52,7 +53,7 @@ const Services = () => {
       icon: Hammer,
       title: "Aménagement intérieur en bois",
       description: "Créations sur mesure pour particuliers et professionnels",
-      image: cuisineImage,
+      image: amenagementImage,
       details: [
         "Placards et dressings sur mesure",
         "Bibliothèques et étagères intégrées",

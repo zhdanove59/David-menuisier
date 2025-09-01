@@ -14,9 +14,11 @@ import {
   Hammer,
   Car
 } from "lucide-react";
+import logo from "@/assets/logo-david1.png";
 import heroImage from "@/assets/hero-menuisier.jpg";
-import logoImage from "@/assets/logo-david.png";
+/**import logoImage from "@/assets/logo-david.png";**/
 import cuisineImage from "@/assets/cuisine-montage.jpg";
+import amenagementImage from "@/assets/amenagement-interieur.jpg";
 import fenetreImage from "@/assets/fenetre-reparation.jpg";
 import urgenceImage from "@/assets/urgence-porte.jpg";
 import cathedraleLeMansImage from "@/assets/cathedrale-le-mans.jpg";
@@ -40,7 +42,7 @@ const Index = () => {
       icon: Hammer,
       title: "Aménagement intérieur",
       description: "Aménagements bois pour particuliers et professionnels",
-      image: cuisineImage
+      image: amenagementImage
     },
     {
       icon: Car,
@@ -123,10 +125,11 @@ const Index = () => {
             {/* Logo signature en premier */}
             <div className="flex justify-center mb-8">
               <img 
-                src={logoImage} 
-                alt="David Menuisier - Signature artisan" 
-                className="h-24 md:h-28 w-auto opacity-90 hover:opacity-100 transition-opacity duration-300"
+               src={logo} 
+              alt="David Menuisier - Signature artisan" 
+              className="w-1/2 h-[30%] opacity-90 hover:opacity-100 transition-opacity duration-300"
               />
+
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
               Nos prestations de menuiserie

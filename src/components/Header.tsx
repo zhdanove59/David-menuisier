@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, MessageCircle } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import logoImage from "@/assets/logo-david.png";
+import logo from "@/assets/logo-david1.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +26,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 lg:space-x-3 hover-lift flex-shrink-0">
             <img 
-              src={logoImage} 
+              src={logo} 
               alt="David Menuisier - L'art du bois sur mesure" 
               className="h-10 md:h-12 w-auto"
             />
